@@ -1,4 +1,4 @@
-## Elasticsearch setup using Docker
+## Elasticsearch - Docker Setup
 
 Elasticsearch Version: 7.7.0
 
