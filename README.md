@@ -4,7 +4,6 @@ Elasticsearch Version: 7.7.0
 
 Docker Version: 2.2
 
-
 ### Commands:
 * Create and run the ES docker container
 
@@ -17,3 +16,6 @@ Docker Version: 2.2
 * Restart ES docker container
 
     ```make docker-restart```
+    
+### Test:
+Can be tested locally through: http://localhost:9200/
