@@ -1,0 +1,24 @@
+version: '2.2'
+
+services:
+  elasticsearch:
+    container_name: elasticsearch_v7
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.7.0
+    environment:
+      - discovery.type=single-node
+      - cluster.routing.allocation.disk.threshold_enabled=false
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+    networks:
+      - elasticsearch
+    restart: always
+
+volumes:
+  elasticsearch_data:
+
+networks:
+  elasticsearch:
+    name: elasticsearch
