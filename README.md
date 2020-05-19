@@ -4,6 +4,9 @@ Elasticsearch Version: 7.7.0
 
 Docker Version: 2.2
 
+### Purpose:
+Can be use for future projects that utilizes Elasticsearch in Docker
+
 ### Commands:
 * Create and run the ES docker container
 
